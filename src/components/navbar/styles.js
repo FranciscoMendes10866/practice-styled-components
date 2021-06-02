@@ -96,7 +96,7 @@ export const Menu = styled.div`
 
 export const Hamburger = styled.div`
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   display: none;
   flex-direction: column;
   cursor: pointer;
