@@ -95,10 +95,20 @@ export const Menu = styled.div`
 `;
 
 export const Hamburger = styled.div`
+  color: white;
   font-size: 1.5rem;
   display: none;
   flex-direction: column;
   cursor: pointer;
+  background: #272727;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 15px;
+  transition: all .25s ease;
+  &:hover {
+    box-shadow: 0 10px 20px -10px rgba(39, 39, 39, 0.6);
+    transform: translateY(-5px);
+  }
   @media (max-width: 768px) {
     display: flex;
   }
