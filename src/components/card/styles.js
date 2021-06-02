@@ -8,6 +8,7 @@ export const CardOutline = styled.div`
   border-radius: 25px;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,.04);
   padding: 10px;
+  max-width: 400px;
 `;
 
 export const CardBody = styled.div`
@@ -16,7 +17,7 @@ export const CardBody = styled.div`
 `;
 
 export const CardContent = styled.div`
-  padding: 8px;
+  padding: 10px;
   display: flex;
   align-items: center;
 `;
@@ -37,7 +38,7 @@ export const Actions = styled.div`
     border-top-left-radius: 8px;
     border-bottom-right-radius: 17px;
     border-bottom-left-radius: 8px;
-    padding: 8px;
+    padding: 10px;
     font-weight: 500;
 `;
 
@@ -67,6 +68,11 @@ export const CardButton = styled.button`
     border-bottom-right-radius: 17px;
     border-bottom-left-radius: 8px;
     border: none;
+    transition: all .25s ease;
+    &:hover {
+        box-shadow: 0 10px 20px -10px rgba(39, 39, 39, 0.6);
+        transform: translateY(-5px);
+    }
 `;
 
 export const Typography = styled.p`
