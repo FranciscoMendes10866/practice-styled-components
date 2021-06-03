@@ -1,5 +1,0 @@
-localhost {
-	root * /var/www
-    encode gzip
-    file_server
-}

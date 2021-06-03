@@ -1,5 +1,4 @@
-# build environment
-FROM node:alpine as build
+FROM node:alpine
 
 WORKDIR /app
 
@@ -8,10 +7,6 @@ RUN npm i --force
 
 COPY . .
 
-RUN npm run build
+EXPOSE 3000
 
-# production environment
-FROM caddy:2.3.0-alpine
-
-COPY conf/Caddyfile /etc/caddy/Caddyfile
-COPY --from=build /app/build /var/www
+CMD ["npm", "start"]
